@@ -1,0 +1,257 @@
+:root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0,0,0,.7);
+    --light-bg: #eee;
+    --border: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow: 0 1.5rem 3rem rgba(0,0,0, .3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    /*font-size: 62%;*/
+    overflow-x: hidden;
+}
+
+html--webkit-scrollbar {
+    width: 1rem;
+}
+
+html--webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+/*home section*/
+.home {
+    padding: 2rem 10%;
+}
+.carousel-inner {
+    height: 50%;
+}
+.slider-image {
+    object-fit: fill;
+}
+.home-content {
+    color: var(--white);
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    animation: fadeIn .6s linear backwards .6s;
+}
+.home-text {
+    font-size: 6rem;
+}
+.home-text-desc{
+    animation: fadeIn .7s linear backwards .7s;
+}
+.home-btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: 999px;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    border: 0;
+    animation: fadeIn .9s linear backwards .9s;
+}
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/*our services*/
+.service-card {
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.service-card:hover {
+    opacity: 0.8;
+    transition: all 0.5s linear;
+}
+
+/*home-about*/
+.home-about {
+    background-color: var(--light-bg);
+}
+.about-image img{
+    width: 70%
+}
+.about-content {
+    color: var(--black);
+}
+
+/*home-packages*/
+.package-col:hover {
+    transform: scale(1.1) ;
+    transition: ease;
+}
+
+/*home-offer*/
+.home-offer {
+    height: 30vh;
+    background-color: var(--light-bg);
+}
+.home-offer p {
+    line-height: 2;
+}
+
+/*about page*/
+
+/*why us*/
+.card-about {
+    background-color: var(--main-color);
+    height: 15vh;
+    box-shadow: var(--box-shadow);
+}
+
+/*reviews*/
+.reviews {
+    background: var(--light-bg);
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.pagination > li > a
+{
+    background-color: white;
+    color:  var(--main-color);
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color:  var(--main-color);
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    color:  var(--main-color);
+    border:  var(--main-color);
+}
+
+.pagination > .active > a:hover
+{
+    background-color: var(--main-color);
+    border: solid 1px var(--main-color);
+}
+
+/*packages-page*/
+.package-image {
+    box-shadow: var(--box-shadow);
+    transition: transform 0.5s;
+}
+.package-image:hover{
+    transform: scale(1.1);
+}
+
+.container-box {
+    display: none;
+}
+.container-box:nth-child(1),
+.container-box:nth-child(2),
+.container-box:nth-child(3),
+.container-box:nth-child(4),
+.container-box:nth-child(5),
+.container-box:nth-child(6) {
+    display: block;
+}
+
+/*book-page*/
+.book{
+    margin-top: 12vh;
+    margin-bottom: 6vh;
+}
+/*footer*/
+footer {
+    background-position: center;
+    background-size: cover;
+    background-color: var(--black);
+    background-attachment: fixed;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.box-container .box h5{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.box-container .box a{
+    color: var(--light-white);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    padding-right: .5rem;
+    transition: .2s linear;
+    text-decoration: none;
+}
+.credit {
+    color: var(--main-color);
+}
+
+
+@media (max-width: 576px) {
+    .image-col {
+        display: none;
+    }
+    .card-about {
+     width: fit-content;
+     height: fit-content;
+    }
+    .home-offer p{
+        font-size: 11px;
+    }
+    .quick-links-box{
+       display: none;
+    }
+}
+

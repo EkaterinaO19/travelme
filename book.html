@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"></head>
+<body>
+
+<!--navbar-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-md">
+        <a class="navbar-brand" href="#"><h3>Travel Me.</h3></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./package.html">Package</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./book.html">Book</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--book form-->
+<section class="book">
+  <div class="container-md bg-light">
+      <h1 class="text-center mt-5">Book your trip now</h1>
+    <form action="" method="post" class="book-form">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Ann" value="" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPhone1" class="form-label">Phone</label>
+                        <input type="phone" class="form-control" id="exampleInputPhone1" aria-describedby="phoneHelp" placeholder="+1 123 455 65" value="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputAddress2">Where to go</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Paris">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ArrivalDate">Arrival Date</label>
+                        <input type="date" class="form-control" id="ArrivalDate" placeholder="Arrival Date">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Doe" value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="anna-doe@gmai.com" value="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputAddress">Where to go</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Your current address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="DepartureDate">Departure Date</label>
+                        <input type="date" class="form-control" id="DepartureDate" placeholder="Departure Date">
+                    </div>
+                </div>
+            </div>
+    <div class="text-center">
+        <button type="submit" class="btn home-btn mb-3">Book</button>
+    </div>
+</div>
+</form>
+  </div>
+</section>
+<!--footer-->
+<footer>
+    <div class="box-container container-md pt-3 text-center">
+        <div class="box quick-links-box">
+            <h5>Quick links:</h5>
+            <a href="./home.html">Home</a>
+            <a  href="./about.html">About</a>
+            <a href="./package.html">Package</a>
+            <a href="./book.html">Book</a>
+        </div>
+
+        <div class="box">
+            <h5>Extra links:</h5>
+            <a>Ask question</a>
+            <a >About Us</a>
+            <a >Private Policy</a>
+            <a >Terms of Use</a>
+        </div>
+
+        <div class="box">
+            <h5>Contacts</h5>
+            <a >+ 66 66 767 76</a>
+            <a >+ 1 337 33636 3</a>
+            <a >California, LA</a>
+            <a >USA</a>
+        </div>
+        <hr>
+        <div class="credit text-center">Created by Ekaterina Oshchepkova.</br> All rights reserved! 2022</div>
+        <hr>
+    </div>
+</footer>
+
+</body>
+</html>
