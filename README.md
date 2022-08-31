@@ -1,8 +1,54 @@
-# travelme
-# Travel Agency web app (HTML+CSS)
+
+# Travel Me
+
+Travel agency web app
 
 
-![home page](/screens/Travel_Me.png?raw=true "home page")
-![Alt text](screens/About.png?raw=true "About")
-![Alt text](/screens/Travel_Me.png?raw=true "Optional Title")
-![Alt text](/screens/Travel_Me.png?raw=true "Optional Title")
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## Screenshots
+
+![App Screenshot](/screens/Travel_Me.png?raw=true "home page")
+![App Screenshot](screens/About.png?raw=true "About")
+![App Screenshot](screens/Packages.png?raw=true "Optional Title")
+![App Screenshot](screens/About (1).png?raw=true "About2")
+
+
+## Tech Stack
+
+**Client:** HTML, CSS, Bootstrap
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/EkaterinaO19/travelme.git
+```
+
+Go to the project directory
+
+```bash
+  cd travelme
+```
+
+Install dependencies
+
+```bash
+  npm init
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
